@@ -1,0 +1,1016 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: cornsilk;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Montesera;
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto-Light.ttf);
+}
+
+.container {
+  background-color: #fff;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  color: white;
+  width: 100%;
+  height: 700px;
+  background-image: url(./images/Background.png);
+  position: relative;
+}
+
+.header__dreamshare_text {
+  position: absolute;
+  left: 248px;
+  top: 46px;
+  font-weight: 700;
+  font-family: Montesera;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.header__login {
+  position: absolute;
+  right: 400px;
+  top: 50px;
+  font-weight: 400;
+  font-family: Montesera;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.header__signup {
+  position: absolute;
+  width: 90px;
+  height: 36px;
+  right: 290px;
+  top: 40px;
+  border: 2px solid #FFFFFF;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  font-family: Montesera;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.header__text_logo {
+  position: absolute;
+  width: 470px;
+  height: 126px;
+  left: 485px;
+  top: 225px;
+  font-weight: 700;
+  font-family: Montesera;
+  font-size: 53px;
+  line-height: 63px;
+  text-align: center;
+}
+
+.header__text_explain {
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 24px;
+  position: absolute;
+  width: 396px;
+  height: 25px;
+  left: 522px;
+  top: 380px;
+}
+
+.header__button {
+  position: absolute;
+  width: 225px;
+  height: 40px;
+  left: 608px;
+  top: 436px;
+  background-color: #FF4E50;
+  border-radius: 40px;
+  font-weight: 700;
+  font-family: Montesera;
+  font-size: 15px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main {
+  width: 100%;
+  position: relative;
+}
+
+.main__how_dreamshare_work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 940px;
+  height: 460px;
+  margin: 95px auto;
+}
+
+.main__how_dreamshare_work__header {
+  font-weight: 800;
+  color: #444444;
+  font-family: Montesera;
+  font-size: 26px;
+  line-height: 20px;
+  margin-left: 297px;
+  margin-bottom: 38px;
+  letter-spacing: 1px;
+}
+
+.main__how_dreamshare_work__step {
+  width: 300px;
+  height: 400px;
+  position: relative;
+}
+
+.main__how_dreamshare_work__step_number {
+  position: absolute;
+  width: 70px;
+  height: 20px;
+  left: 25px;
+  bottom: 160px;
+  background: #FF4E50;
+  border-radius: 40px;
+  font-weight: 400;
+  font-family: Montesera;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.main__how_dreamshare_work__step_header {
+  position: absolute;
+  width: 250px;
+  height: 58px;
+  left: 28px;
+  bottom: 80px;
+  font-weight: 700;
+  font-family: Montesera;
+  font-size: 24px;
+  line-height: 26px;
+  color: white;
+}
+
+.main__how_dreamshare_work__step_text {
+  position: absolute;
+  width: 250px;
+  height: 57px;
+  left: 25px;
+  bottom: 2px;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 14px;
+  color: #E3E3E3;
+}
+
+.main__meet_partner {
+  width: 941px;
+  height: 361px;
+  background-color: #fff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 95px auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__meet_partner_header {
+  position: absolute;
+  left: 227px;
+  top: -6px;
+  letter-spacing: 0.7px;
+  font-weight: 700;
+  font-family: Montesera;
+  font-size: 26px;
+  line-height: 32px;
+  color: #444444;
+}
+
+.main__meet_partner__person {
+  width: 220px;
+  height: 230px;
+  margin-top: 58px;
+  position: relative;
+  text-align: center;
+}
+
+.main__meet_partner__person_avatar {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 52px;
+  top: 5px;
+  border-radius: 50%;
+}
+
+.main__meet_partner__person_avatar_logo {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  border-radius: 50%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 5px solid white;
+  background-color: #FF4E50;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main__meet_partner__person_name {
+  font-weight: 800;
+  font-family: Montesera;
+  font-size: 14px;
+  line-height: 17px;
+  color: #444444;
+  margin-top: 142px;
+}
+
+.main__meet_partner__person_about {
+  color: #666666;
+  width: 220px;
+  margin-top: 28px;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.main__meet_partner_button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 12px 0 0 22px;
+  position: absolute;
+  width: 180px;
+  height: 40px;
+  left: 382px;
+  bottom: 0;
+  background: #FFFFFF;
+  border: 2px solid #FF4E50;
+  font-family: Montesera;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 40px;
+  letter-spacing: 0.3px;
+  color: #FF4E50;
+}
+
+.main__activities {
+  width: 940px;
+  height: 1032px;
+  background-color: #fff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 95px auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 60px;
+}
+
+.main__activities_header {
+  position: absolute;
+  left: 262px;
+  top: -5px;
+  font-weight: 700;
+  font-family: Montesera;
+  font-size: 28px;
+  line-height: 32px;
+  color: #444444;
+}
+
+.main__activities__photos {
+  width: 100%;
+  height: 970px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.main__activities__photos_type-1 {
+  width: 300px;
+}
+
+.main__activities__photos_type-2 {
+  width: 620px;
+}
+
+.main__activities__photos_type-1, .main__activities__photos_type-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 310px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-family: Montesera;
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.main__create_activity {
+  width: 482px;
+  height: 158px;
+  background-color: #fff;
+  position: relative;
+  margin: 95px auto;
+}
+
+.main__create_activity_header {
+  letter-spacing: -0.18px;
+  font-family: Montesera;
+  font-size: 28px;
+  line-height: 32px;
+  color: #444444;
+  position: absolute;
+  left: 62px;
+  top: -6px;
+}
+
+.main__create_activity_question {
+  color: #666;
+  position: absolute;
+  font-family: Montesera;
+  font-size: 16px;
+  line-height: 14px;
+  left: 104px;
+  top: 80px;
+  letter-spacing: -0.3px;
+}
+
+.main__create_activity__form {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  left: 0px;
+  top: 118px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__create_activity__form_input {
+  width: 299px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #D4D4D4;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+  border-radius: 3px;
+  padding: 7px 0 0 14px;
+}
+
+.main__create_activity__form_input::-webkit-input-placeholder {
+  color: #999999;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.main__create_activity__form_input:-ms-input-placeholder {
+  color: #999999;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.main__create_activity__form_input::-ms-input-placeholder {
+  color: #999999;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.main__create_activity__form_input::placeholder {
+  color: #999999;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.main__create_activity__form_button {
+  width: 173px;
+  height: 40px;
+  background: #FF4E50;
+  border-radius: 40px;
+  margin-left: 10px;
+  font-weight: 700;
+  color: white;
+  font-family: Montesera;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 11px 30px;
+  letter-spacing: 0.1px;
+}
+
+.footer {
+  width: 100%;
+  height: 224px;
+  background-color: #fff;
+  position: relative;
+}
+
+.footer__logo_text {
+  position: absolute;
+  font-family: Montesera;
+  font-size: 16px;
+  line-height: 20px;
+  left: 249px;
+  top: 36px;
+  font-weight: 400;
+  color: #FF4E50;
+}
+
+.footer__column {
+  width: 114px;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 26px;
+  position: absolute;
+  left: 491px;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #999999;
+}
+
+.footer__column_header {
+  font-weight: 700;
+  font-family: Montesera;
+  margin-bottom: 13px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #444444;
+}
+
+.footer__partners {
+  font-weight: 700;
+  position: absolute;
+  font-family: Montesera;
+  font-size: 14px;
+  line-height: 17px;
+  left: 730px;
+  letter-spacing: 0.2px;
+  top: 38px;
+  color: #444444;
+}
+
+.footer__image {
+  position: absolute;
+  right: 250px;
+  width: 110px;
+  height: 24px;
+  top: 58px;
+  background-image: url(./images/acc4.png);
+}
+
+.footer__image_text {
+  position: absolute;
+  font-family: Montesera;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  letter-spacing: 1px;
+  color: #CCCCCC;
+  top: -19px;
+  right: -3px;
+}
+
+.hr {
+  width: 100%;
+  height: 2px;
+  background: #FF4E50;
+  margin-top: 100px;
+}
+
+.downer {
+  bottom: 128px;
+}
+
+.down-header {
+  bottom: 46px;
+  letter-spacing: 1px;
+  left: 22px;
+}
+
+.fix-about {
+  margin-top: 22px;
+}
+
+.spacer {
+  height: 36px;
+}
+
+@media screen and (max-width: 1460px) {
+  .container {
+    width: 768px;
+  }
+  .header {
+    background-position: center;
+  }
+  .header__dreamshare_text {
+    left: 48px;
+    top: 46px;
+  }
+  .header__login {
+    right: 160px;
+    top: 50px;
+  }
+  .header__signup {
+    right: 50px;
+    top: 40px;
+  }
+  .header__text_logo {
+    left: 150px;
+    top: 225px;
+  }
+  .header__text_explain {
+    left: 186px;
+    top: 380px;
+  }
+  .header__button {
+    left: 272px;
+    bottom: 225px;
+  }
+  .main__how_dreamshare_work {
+    width: 748px;
+    height: 460px;
+  }
+  .main__how_dreamshare_work__header {
+    margin-left: 230px;
+    margin-bottom: 35px;
+  }
+  .main__how_dreamshare_work__step {
+    width: 236px;
+    height: 400px;
+    position: relative;
+  }
+  .main__how_dreamshare_work__step_number {
+    width: 70px;
+    height: 20px;
+    left: 20px;
+    bottom: 175px;
+  }
+  .main__how_dreamshare_work__step_header {
+    width: 196px;
+    left: 20px;
+    bottom: 100px;
+    line-height: 16px;
+  }
+  .main__how_dreamshare_work__step_text {
+    width: 196px;
+    height: 68px;
+    left: 20px;
+    bottom: 10px;
+  }
+  .main__meet_partner {
+    width: 492px;
+    height: 605px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .main__meet_partner_header {
+    position: absolute;
+    left: 38px;
+    font-size: 22px;
+    top: -6px;
+  }
+  .main__meet_partner__person {
+    width: 236px;
+    height: 220px;
+    margin-top: 45px;
+    position: relative;
+    text-align: center;
+  }
+  .main__meet_partner_button {
+    left: 156px;
+    bottom: 0;
+  }
+  .main__activities {
+    width: 748px;
+  }
+  .main__activities_header {
+    left: 200px;
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .main__activities__photos_type-1 {
+    width: 236px;
+  }
+  .main__activities__photos_type-2 {
+    width: 492px;
+  }
+  .main__activities__photos_type-1, .main__activities__photos_type-2 {
+    font-size: 22px;
+  }
+  .downer {
+    bottom: 125px;
+  }
+  .down-header {
+    bottom: 60px;
+    letter-spacing: 1px;
+    left: 22px;
+  }
+  .fixik {
+    bottom: -5px;
+  }
+  .footer__logo_text {
+    left: 38px;
+    top: 38px;
+  }
+  .footer__column {
+    width: 114px;
+    left: 266px;
+    bottom: 0;
+  }
+  .footer__column_header {
+    margin-bottom: 13px;
+  }
+  .footer__partners {
+    left: 435px;
+    letter-spacing: 0.2px;
+    top: 38px;
+  }
+  .footer__image {
+    right: 40px;
+    top: 58px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .container {
+    width: 300px;
+  }
+  .header {
+    height: 540px;
+    background-position: center;
+    margin-bottom: 35px;
+    background-position: -450px 0;
+    background-size: 400% 100%;
+  }
+  .header__dreamshare_text {
+    left: 86px;
+    top: 153px;
+  }
+  .header__login {
+    left: 86px;
+    top: 30px;
+  }
+  .header__signup {
+    right: 70px;
+    top: 20px;
+  }
+  .header__text_logo {
+    left: 24px;
+    top: 200px;
+    font-size: 30px;
+    line-height: 37px;
+    width: 270px;
+  }
+  .header__text_explain {
+    left: 20px;
+    top: 280px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 24px;
+    width: 280px;
+  }
+  .header__button {
+    width: 280px;
+    left: 10px;
+    top: 350px;
+  }
+  .phone-fix {
+    display: block;
+    width: 300px;
+    height: 200px;
+  }
+  .main__how_dreamshare_work {
+    margin-bottom: 45px;
+    width: 300px;
+    height: 782px;
+    margin-top: 0;
+  }
+  .main__how_dreamshare_work__header {
+    margin-left: 16px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: -0.5px;
+  }
+  .main__how_dreamshare_work__step {
+    width: 300px;
+    height: 240px;
+    position: relative;
+  }
+  .main__how_dreamshare_work__step_number {
+    width: 70px;
+    height: 20px;
+    left: 20px;
+    bottom: 155px;
+  }
+  .main__how_dreamshare_work__step_header {
+    width: 196px;
+    left: 20px;
+    bottom: 83px;
+    line-height: 16px;
+  }
+  .main__how_dreamshare_work__step_text {
+    width: 196px;
+    height: 68px;
+    left: 20px;
+    bottom: 10px;
+  }
+  .main__meet_partner {
+    margin-top: 0;
+    width: 280px;
+    height: 1030px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 35px;
+  }
+  .main__meet_partner_header {
+    position: absolute;
+    left: 10px;
+    letter-spacing: -0.5px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 27px;
+    top: -20px;
+  }
+  .main__meet_partner__person {
+    width: 236px;
+    height: 200px;
+    margin-top: 35px;
+    margin-left: 30px;
+    position: relative;
+    text-align: center;
+  }
+  .main__meet_partner_button {
+    width: 280px;
+    text-align: center;
+    left: 0px;
+    bottom: 0;
+  }
+  .main__activities {
+    margin-top: 0;
+    width: 300px;
+    height: 990px;
+  }
+  .main__activities_header {
+    left: 20px;
+    width: 250px;
+    text-align: center;
+  }
+  .main__activities__photos_type-1, .main__activities__photos_type-2 {
+    width: 300px;
+    height: 120px;
+    font-size: 22px;
+    background-position: 0 -80px;
+  }
+  .main__create_activity {
+    width: 300px;
+    height: 192px;
+    margin: 35px auto;
+  }
+  .main__create_activity_header {
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: -0.18px;
+    text-align: center;
+    width: 200px;
+    left: 50px;
+    top: 0px;
+  }
+  .main__create_activity_question {
+    color: #666;
+    position: absolute;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 14px;
+    left: 20px;
+    top: 80px;
+    letter-spacing: -0.3px;
+  }
+  .main__create_activity__form {
+    margin: 0 auto;
+    width: 280;
+    height: 90px;
+    left: 0px;
+    top: 118px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main__create_activity__form_input {
+    width: 280px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  .main__create_activity__form_button {
+    width: 280px;
+    height: 40px;
+    margin-left: 10px;
+    padding: 11px 83px;
+    margin-top: 10px;
+    letter-spacing: 0.1px;
+  }
+  .downer {
+    top: 95px;
+  }
+  .down-header {
+    top: 135px;
+    width: 280px;
+  }
+  .fixik {
+    bottom: -10px;
+  }
+  .hr {
+    margin-top: 40px;
+  }
+  .footer {
+    height: 205px;
+  }
+  .footer__logo_text {
+    left: 100px;
+    top: 20px;
+  }
+  .footer__column {
+    width: 280px;
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    left: 20px;
+    bottom: 80px;
+  }
+  .footer__column_header {
+    margin: 0 100px 13px;
+  }
+  .footer__column_text {
+    margin-right: 20px;
+  }
+  .footer__partners {
+    left: 127px;
+    letter-spacing: 0.2px;
+    top: 135px;
+  }
+  .footer__image {
+    right: 100px;
+    top: 180px;
+  }
+  .footer__image_text {
+    right: 5px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
